@@ -7,3 +7,19 @@
 	margin-left: 25%;
 	margin-right: 50%;
 }
+.container {
+	border: solid 1px red;
+}
+
+.testBorder {
+	border: solid 1px blue;
+	height: 50vh;
+}
+
+.sidebar {
+	height: 80vh;
+}
+
+.productMain {
+	padding: 0px;
+}
