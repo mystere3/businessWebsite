@@ -1,8 +1,8 @@
 // BIKES
 
-var brand;
-var type;
-var price;
+// var brand;
+// var type;
+// var price;
 
 // THUMBNAIL HTML
 
@@ -145,69 +145,52 @@ var scottRd4_price = 1800;
 var scottRd4 = [scottRd4_thumbId, scottRd4_thumbImg, scottRd4_name, scottRd4_price];
 
 var allBikesArray = [feltMt1, feltMt2, feltMt3, feltMt4, feltMt5, feltRd1, feltRd2, feltRd3, feltRd4, feltRd5, feltTr1, feltTr2, feltTr3, 
-	konaRd1, scottMt1, scottMt2, scottMt3, scottMt4, scottMt5, scottRd1, scottRd2, scottRd4];
+	konaRd1, scottMt1, scottMt2, scottMt3, scottMt4, scottMt5, scottRd1, scottRd2, scottRd3, scottRd4];
 var feltArray = [feltMt1, feltMt2, feltMt3, feltMt4, feltMt5, feltRd1, feltRd2, feltRd3, feltRd4, feltRd5, feltTr1, feltTr2, feltTr3];
 var konaArray = [konaRd1];
-var scottArray = [scottMt1, scottMt2, scottMt3, scottMt4, scottMt5, scottRd1, scottRd2, scottRd4];
+var scottArray = [scottMt1, scottMt2, scottMt3, scottMt4, scottMt5, scottRd1, scottRd2, scottRd3, scottRd4];
 var mountainArray = [feltMt1, feltMt2, feltMt3, feltMt4, feltMt5, scottMt1, scottMt2, scottMt3, scottMt4, scottMt5];
-var roadArray = [feltRd1, feltRd2, feltRd3, feltRd4, feltRd5, konaRd1, scottRd1, scottRd2, scottRd4];
+var roadArray = [feltRd1, feltRd2, feltRd3, feltRd4, feltRd5, konaRd1, scottRd1, scottRd2, scottRd3, scottRd4];
 var trackArray = [feltTr1, feltTr2, feltTr3];
 var to500Array = [feltMt1, feltRd1, feltRd2, scottMt1, scottRd1, scottRd2];
-var to1000Array = [feltMt2, feltMt3, feltRd3, feltRd4, feltTr1, scottMt2, scottMt3, scottRd4];
+var to1000Array = [feltMt2, feltMt3, feltRd3, feltRd4, feltTr1, scottMt2, scottMt3, scottRd3, scottRd4];
 var to5000Array = [feltMt4, feltMt5, feltRd5, feltTr2, feltTr3, konaRd1, scottMt4, scottMt5];
 
 
 
 
 
-var thumb1 = "<div class='col-md-3 col-sm-6 thumbBox' id='";
-var thumb2 = "'><center><img src='";
-var thumb3 = "' class='thumbImage'><h4>";
-var thumb4 = "</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor a turpis vel malesuada. </center></div>";
-
-var testBike = "";
-testBike += thumb1 + feltMt1[0] + thumb2 + feltMt1[1] + thumb3 + feltMt1[2] + thumb4;
-
-var dynContent = "";
 
 
+var thumb1 = "<div class='col-md-3 col-sm-6 thumbBox'><center><img src='";
+var thumb2 = "' class='thumbImage'><h4>";
+var thumb3 = "</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor a turpis vel malesuada. </center><input type='button' value='Select' onclick='displaySingle(";
+var thumb4 = ")'</input></div>";
 
-
-
-
-
-
-var compiledList = "";
-var spec1 = "<div class='col-md-6 col-sm-12 testBorder'>spec1</div>";
-var spec2 = "<div class='col-md-6 col-sm-12 testBorder'>spec2</div>";
-
-// var testDIV = document.createElement('div');
-// $("#dynamicContent").appendChild(testDIV);
+var lastPage = "";
+var single1 = ""
 
 
 
 $(function() {
 
-	// TESTING //
-	//var dynContent = "";
-	//dynContent += spec1;
-	//dynContent += spec2;
-	//var testDIV = document.createElement(dynContent);
-	//$("#dynamicContent").html(testBike);
-	
+	var dynContent;
 
 	// PRODUCT SELECTION
 
 	$("#bikeForm").submit(function(e) {
         e.preventDefault();
+
         //var entName = document.forms["myForm"]["userName"].value;
         //var entPass = document.forms["myForm"]["password"].value;
-        brand = document.forms["bikeForm"]["brandButton"].value;
-        type = document.forms["bikeForm"]["brandButton"].value;
-        price = document.forms["bikeForm"]["brandButton"].value;
+        var brand = document.forms["bikeForm"]["brandButton"].value;
+        var type = document.forms["bikeForm"]["typeButton"].value;
+        var price = document.forms["bikeForm"]["priceButton"].value;
         var brandArray;
         var typeArray;
         var priceArray;
+        
+        dynContent = "";
 
 
 
@@ -244,72 +227,92 @@ $(function() {
         };
 
     	
-
+        var currentBike;
+        var typeContained;
+        var priceContained;
+        //var displayedBikes;
     	for (var i = 0; i < brandArray.length; i++) {
-    		var currentBike = brandArray[i];
+    		currentBike = brandArray[i];
     		// var brandContained = $.inArray(currentBike, brandArray);
-    		var typeContained = $.inArray(currentBike, typeArray);
-    		var priceContained = $.inArray(currentBike, priceArray)
+    		typeContained = $.inArray(currentBike, typeArray);
+    		priceContained = $.inArray(currentBike, priceArray)
+
+            var bikeDiv = "";
 
     		if (typeContained >= 0 && priceContained >= 0) {
-    			var bikeDiv = "";
-				bikeDiv += thumb1 + currentBike[0] + thumb2 + currentBike[1] + thumb3 + currentBike[2] + thumb4;
+    			
+				bikeDiv += thumb1 + currentBike[1] + thumb2 + currentBike[2] + thumb3 + currentBike[0] + thumb4;
     		};
     		dynContent += bikeDiv;
-    		//console.log("brandContained " + brandContained);
-    		console.log("typeContained " + typeContained);
-    		console.log("priceContained " + priceContained);
-    		console.log(dynContent);
+
+            // DEBUGGING CONSOLE
+
+    		// console.log("brandContained " + brandContained);
+            // console.log("currentBike " + currentBike);
+            // console.log("brandArray " + brandArray);
+            // console.log("typeArray " + typeArray);
+            // console.log("priceArray " + priceArray);
+            // console.log($.inArray(currentBike, typeArray));
+            // console.log($.inArray(currentBike, priceArray));
+    		// console.log("typeContained " + typeContained);
+    		// console.log("priceContained " + priceContained);
+    		// console.log(dynContent);
     	};
 
     	$("#dynamicContent").html(dynContent);
 
     });
 
+    // function testFunction() {
+    //     console.log("Test Called");
+    // }
+
+    
 
 	// LIGHTBOX CODE
 
-	$('.lightbox_trigger').click(function(e) {
-    
-        // Code that makes the lightbox appear
-        e.preventDefault();
-        var image_href = $(this).attr("href");
-
-        if ($('#lightbox').length > 0) { // #lightbox exists
-    
-            //insert img tag with clicked link's href as src value
-            $('#content').html('<img src="' + image_href + '" />');
-            
-            //show lightbox window - you can use a transition here if you want, i.e. .show('fast')
-            $('#lightbox').show();
-        } else { //#lightbox does not exist 
-    
-            //create HTML markup for lightbox window
-            var lightbox = 
-            '<div id="lightbox">' +
-                '<p>Click to close</p>' +
-                '<div id="content">' + //insert clicked link's href into img src
-                    '<img src="' + image_href +'" />' +
-                '</div>' +  
-            '</div>';
-                
-            //insert lightbox HTML into page
-            $('body').append(lightbox);
-        }
-        $("html")
-            .css("position", "fixed")
-            .css("width", "100%");
-
-        $('img').bind('contextmenu', function(e) {
-            return false;
-        }); 
-    });
-
-    $('#lightbox').live('click', function() {
-        $('#lightbox').hide();
-        $("html").css("position", "static");
-    });
+	
+    //$('#lightbox').live('click', function() {
+    //    $('#lightbox').hide();
+    //    $("html").css("position", "static");
+    //});
 
 })
+
+function displaySingle(bike) {
+    console.log(bike);
+}
+
+// function openSingle() {
+//     console.log("openSingle called");
+// }   
+
+
+
+
+// $('.thumbBox').click(function(e) {
+//         //e.preventDefault();
+//         console.log("test");
+        
+
+//         var bikeList = {
+//             "feltMt1": feltMt1,
+//             "feltMt2": feltMt2
+//         };
+
+//         var chosenId = $(this).attr(id);
+//         var chosenBike = bikeList[chosenId]
+//         console.log(chosenBike);
+
+    
+//         dynContent = "";
+// });
+
+
+
+
+
+
+
 
 

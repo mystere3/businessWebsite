@@ -7,6 +7,9 @@ html {
  body {
  	/*overflow: auto;*/
  }
+ a.thumbClick {
+ 	color: #333;
+ }
 .sidebar {
 	max-width: 200px;
 	/*min-height: 200vh;*/
@@ -25,7 +28,7 @@ html {
 
 .thumbBox {
 	border: solid 1px yellow;
-	cursor: pointer;
+	/*cursor: pointer;*/
 	height: 275px;
 	/*background-color: white;*/
 }
