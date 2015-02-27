@@ -1,0 +1,25 @@
+.thumbBox {
+	border: solid 1px red;
+	cursor: pointer;
+	min-height: 275px;
+}
+
+.thumbImage {
+	width: 90%;
+	margin-top: 10px;
+	border: solid 1px grey;
+	box-shadow:0 0 20px #ccc;
+    -moz-box-shadow:0 0 50px #ccc;
+    -webkit-box-shadow:0 0 50px #ccc;
+}
+
+.singleImage {
+	width: 90%;
+}
+
+.singleInfo {
+
+}
+.singleDescrip {
+	margin: 10px;
+}
