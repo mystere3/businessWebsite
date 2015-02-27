@@ -1,23 +1,19 @@
+body{
+	background-image: url("../img/bg.jpg");
+}
+
 #header{
 	margin-bottom: 5px;
+	background-color: rgba(255,255,255,.5);
+}
+.navbar-default{
+	background-color: rgba(255,255,255,.6);
 }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-  margin-bottom: 0;
-
-}
-
-.navItem{
-	margin-left: 50px;
-	margin-right: 50px;
-	font-size: 16pt;
+#navItem{
+	color: red;
+	font-size: 20pt;
+	padding-left: 5%;
 }
 .testBorder {
 	border: solid 1px blue;
@@ -32,12 +28,17 @@
 	padding: 0px;
 }
 
-#splashImage{
-	padding: 0;
+#biker{
+	height: 75%;
+	width: 100%;
+	z-index: 0;
 	margin: 0;
 }
-
-#biker{
-	width: 100%;
-	height: 75%;
+#mission{
+	position: absolute;
+	border: solid 1px red;
+	background-color: orange;
+	z-index: 1;
+	top: 0;
+	left: 0;
 }
