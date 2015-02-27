@@ -29,7 +29,7 @@ html {
 .thumbBox {
 	border: solid 1px yellow;
 	/*cursor: pointer;*/
-	height: 275px;
+	min-height: 275px;
 	/*background-color: white;*/
 }
 
@@ -55,6 +55,11 @@ html {
 	margin-top: 10px;
 	padding-bottom: 25px;	
 }
+.singleButton {
+	margin: 10px;
+}
+
+
 .clear {
 	clear: both;
 }

@@ -10,31 +10,36 @@ var feltMt1_thumbId = "feltMt1";
 var feltMt1_thumbImg = "img/bikes/felt_mountain_1_thumb.jpg";
 var feltMt1_name = "Felt Mountain 1";
 var feltMt1_price = 400;
-var feltMt1 = [feltMt1_thumbId, feltMt1_thumbImg, feltMt1_name, feltMt1_price];
+var feltMt1_Img = "img/bikes/felt_mountain_1.jpg";
+var feltMt1 = [feltMt1_thumbId, feltMt1_thumbImg, feltMt1_name, feltMt1_price, feltMt1];
 
 var feltMt2_thumbId = "feltMt2";
 var feltMt2_thumbImg = "img/bikes/felt_mountain_2_thumb.jpg";
 var feltMt2_name = "Felt Mountain 2";
 var feltMt2_price = 700;
-var feltMt2 = [feltMt2_thumbId, feltMt2_thumbImg, feltMt2_name, feltMt2_price];
+var feltMt2_Img = "img/bikes/felt_mountain_2.jpg";
+var feltMt2 = [feltMt2_thumbId, feltMt2_thumbImg, feltMt2_name, feltMt2_price, feltMt2];
 
 var feltMt3_thumbId = "feltMt3";
 var feltMt3_thumbImg = "img/bikes/felt_mountain_3_thumb.jpg";
 var feltMt3_name = "Felt Mountain 3";
 var feltMt3_price = 900;
-var feltMt3 = [feltMt3_thumbId, feltMt3_thumbImg, feltMt3_name, feltMt3_price];
+var feltMt3_Img = "img/bikes/felt_mountain_3.jpg";
+var feltMt3 = [feltMt3_thumbId, feltMt3_thumbImg, feltMt3_name, feltMt3_price, feltMt3];
 
 var feltMt4_thumbId = "feltMt4";
 var feltMt4_thumbImg = "img/bikes/felt_mountain_4_thumb.jpg";
 var feltMt4_name = "Felt Mountain 4";
 var feltMt4_price = 2000;
-var feltMt4 = [feltMt4_thumbId, feltMt4_thumbImg, feltMt4_name, feltMt4_price];
+var feltMt4_Img = "img/bikes/felt_mountain_4.jpg";
+var feltMt4 = [feltMt4_thumbId, feltMt4_thumbImg, feltMt4_name, feltMt4_price, feltMt4];
 
 var feltMt5_thumbId = "feltMt5";
 var feltMt5_thumbImg = "img/bikes/felt_mountain_5_thumb.jpg";
 var feltMt5_name = "Felt Mountain 5";
 var feltMt5_price = 4000;
-var feltMt5 = [feltMt5_thumbId, feltMt5_thumbImg, feltMt5_name, feltMt5_price];
+var feltMt5_Img = "img/bikes/felt_mountain_5.jpg";
+var feltMt5 = [feltMt5_thumbId, feltMt5_thumbImg, feltMt5_name, feltMt5_price, feltMt5];
 
 var feltRd1_thumbId = "feltRd1";
 var feltRd1_thumbImg = "img/bikes/felt_road_1_thumb.jpg";
@@ -164,8 +169,8 @@ var to5000Array = [feltMt4, feltMt5, feltRd5, feltTr2, feltTr3, konaRd1, scottMt
 
 var thumb1 = "<div class='col-md-3 col-sm-6 thumbBox'><center><img src='";
 var thumb2 = "' class='thumbImage'><h4>";
-var thumb3 = "</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor a turpis vel malesuada. </center><input type='button' value='Select' onclick='displaySingle(";
-var thumb4 = ")'</input></div>";
+var thumb3 = "</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor a turpis vel malesuada. <br><input type='button' class='singleButton' value='Select' onclick='displaySingle(";
+var thumb4 = ")'</input></center></div>";
 
 var lastPage = "";
 var single1 = ""
@@ -259,7 +264,10 @@ $(function() {
     		// console.log(dynContent);
     	};
 
-    	$("#dynamicContent").html(dynContent);
+            $("#dynamicContent").html(dynContent);
+
+    	
+
 
     });
 
@@ -281,6 +289,20 @@ $(function() {
 
 function displaySingle(bike) {
     console.log(bike);
+    var singleContent = "";
+    var singDiv1 = "<div class='col-md-4 col-md-offset-1'><a href='";
+    // bike[4]
+    var singDiv2 = "'><img class='thumbImage' src='";
+    // bike[1]
+    var singDiv3 = "'><center><br>Click to Enlarge</center></a></div><div class='col-md-6 col-md-offset-1 singleInfo'><h3 class='bikeName'>";
+    // bike[2]
+    var singDiv4 = "</h3><ul><li class='price'>";
+    // bike[3]
+    var singDiv5 = "</li><li>Weight: XXX</li><li>Height: XXX</li><li>Length: XXX</li><li>Gears: XX</li></ul></div><div class='col-md-12 singleDescrip'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor a turpis vel malesuada. Sed vitae ornare lacus. Duis laoreet ipsum in magna sagittis imperdiet. Maecenas in diam a lectus pharetra rutrum. Nulla massa mi, malesuada non vulputate et, auctor vitae lectus. Phasellus vel maximus odio. Maecenas non commodo libero. Ut diam quam, viverra eu turpis quis, ornare bibendum lorem. Nulla a sem augue. Integer volutpat justo quis neque maximus, vitae fermentum nunc aliquam. Aliquam in iaculis dui. Pellentesque sit amet tellus quis purus vestibulum gravida nec a nibh. Aliquam at faucibus arcu. Duis sem mauris, hendrerit non enim a, ultrices luctus ligula.</div>";
+
+    singleContent = singDiv1 + bike[4] + singDiv2 + bike[1] + singDiv3 + bike[2] + singDiv4 + bike[3] + singDiv5;
+    $("#dynamicContent").html(singleContent);
+
 }
 
 // function openSingle() {
