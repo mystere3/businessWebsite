@@ -32,7 +32,7 @@ body{
 */}
 #biker{
 	height: 75%;
-	min-width: 128%;
+	min-width: 100%;
 	z-index: 0;
 	margin: 0;
 }
