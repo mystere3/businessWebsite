@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<title>Bike Trails</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="scripts/bike_trail.js"></script>	
+	</head>
+	<body>
+<!-- 		<div id="results" class="container">
+		    <form class="form-inline" role="form">
+      	      <div id="place_name" class="form-group has-feedback">
+    		     <label for="trailname" class="control-label">Search Bike Trails in: </label>
+    			  <input type="text" class="form-control" id="trailname" placeholder="e.g. Brooklyn" />
+    		  </div>
+    		  <button id="search_trail" type="submit" class="btn btn-success">Submit</button>
+    		</form>
+    	</div> -->
+         <div>
+            <h3>Type a place to search for Bike Trails</h3>
+            <script>
+                (function() {
+                    var cx = '013107080486016069546:kb6n7lqp7ue';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+  
+            </script>
+            <gcse:search></gcse:search>
+        </div>
+	</body>
+</html>
