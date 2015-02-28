@@ -27,10 +27,12 @@ body{
 .productMain {
 	padding: 0px;
 }
-
+#splashImage{
+	position: absolute;
+}
 #biker{
 	height: 75%;
-	width: 100%;
+	min-width: 128%;
 	z-index: 0;
 	margin: 0;
 }
@@ -39,6 +41,6 @@ body{
 	border: solid 1px red;
 	background-color: orange;
 	z-index: 1;
-	top: 0;
-	left: 0;
+	top: 1%;
+	left: 93%;
 }
