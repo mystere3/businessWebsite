@@ -28,8 +28,8 @@ body{
 	padding: 0px;
 }
 #splashImage{
-	position: absolute;
-}
+/*	position: absolute;
+*/}
 #biker{
 	height: 75%;
 	min-width: 128%;
@@ -38,9 +38,16 @@ body{
 }
 #mission{
 	position: absolute;
-	border: solid 1px red;
-	background-color: orange;
+	color: black;
+	border: solid 1px white;
+	border-radius: 15px;
+	background-color: rgba(255,255,255,.6);
 	z-index: 1;
-	top: 1%;
-	left: 93%;
+	top: 42%;
+	left: 65%;
+}
+#featured{
+	margin-top: 1%;
+	background-color: blue;
+	clear: both;
 }
