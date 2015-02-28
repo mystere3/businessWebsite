@@ -1,118 +1,74 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title></title>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js">
-    </script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
-    </script>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="CSS/products.css">
-    <script src="scripts/main.js"></script>
-</head>
+    <head>
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js">
+        </script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
+        </script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/products.css">
+        <script src="scripts/main.js"></script>
+    </head>
 
-<body>
-    <div class="jumbotron" id="header">
-        <div class="container">
-            <h1>LOGO BANNER</h1>
-        </div>
-    </div>
-    <nav role="navigation" class="navbar navbar-default">
-        <!-- Collection of nav links and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#" class="navItem">Home</a>
-                </li>
-                <li><a href="products.html" class="navItem">Products</a>
-                </li>
-                <li><a href="#" class="navItem">Trails</a>
-                </li>
-                <li><a href="#" class="navItem">About</a>
-                </li>
-                <li><a href="#" class="navItem">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container productMain">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 testBorder sidebar" >
-                <form id="bikeForm">
-                    Select Brand:<br>
-                    <input type="radio" name="brandButton" value="felt"> Felt<br>
-                    <input type="radio" name="brandButton" value="kona"> Kona<br>
-                    <input type="radio" name="brandButton" value="scott"> Scott<br>
-                    <input type="radio" name="brandButton" value="all" checked="checked"> Select all<br>
-                    <br>
-                    Select Type:<br>
-                    <input type="radio" name="typeButton" value="mountain"> Mountain<br>
-                    <input type="radio" name="typeButton" value="road"> Road<br>
-                    <input type="radio" name="typeButton" value="track"> Track<br>
-                    <input type="radio" name="typeButton" value="all" checked="checked"> Select all<br>
-                    <br>
-                    Select Price:<br>
-                    <input type="radio" name="priceButton" value="to500"> $0 - $500<br>
-                    <input type="radio" name="priceButton" value="to1000"> $500 - $1000<br>
-                    <input type="radio" name="priceButton" value="to5000"> $1000 - $5000<br>
-                    <input type="radio" name="priceButton" value="all" checked="checked"> Select all<br>
-
-                    <input type="submit" value="Submit">
-                </form>
+    <body>
+        <div class="jumbotron" id="header">
+            <div class="container">
+                <h1>LOGO BANNER</h1>
             </div>
+        </div>
+        <nav role="navigation" class="navbar navbar-default">
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" class="navItem">Home</a>
+                    </li>
+                    <li><a href="products.html" class="navItem">Products</a>
+                    </li>
+                    <li><a href="#" class="navItem">Trails</a>
+                    </li>
+                    <li><a href="#" class="navItem">About</a>
+                    </li>
+                    <li><a href="#" class="navItem">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container productMain">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 testBorder sidebar" >
+                    <form id="bikeForm">
+                        Select Brand:<br>
+                        <input type="radio" name="brandButton" value="felt"> Felt<br>
+                        <input type="radio" name="brandButton" value="kona"> Kona<br>
+                        <input type="radio" name="brandButton" value="scott"> Scott<br>
+                        <input type="radio" name="brandButton" value="all" checked="checked"> Select all<br>
+                        <br>
+                        Select Type:<br>
+                        <input type="radio" name="typeButton" value="mountain"> Mountain<br>
+                        <input type="radio" name="typeButton" value="road"> Road<br>
+                        <input type="radio" name="typeButton" value="track"> Track<br>
+                        <input type="radio" name="typeButton" value="all" checked="checked"> Select all<br>
+                        <br>
+                        Select Price:<br>
+                        <input type="radio" name="priceButton" value="to500"> $0 - $500<br>
+                        <input type="radio" name="priceButton" value="to1000"> $500 - $1000<br>
+                        <input type="radio" name="priceButton" value="to5000"> $1000 - $5000<br>
+                        <input type="radio" name="priceButton" value="all" checked="checked"> Select all<br>
 
-            <div id="dynamicContent" class="col-md-9 col-sm-9 testBorder ">
-                
-                <!-- THUMBNAIL TEMPLATE -->
-               <!--  <div class='col-md-3 col-sm-6 thumbBox' id='feltMt1'>
-                    <a class='thumbClick' id='feltMt1'><center><img src='img/bikes/felt_mountain_1_thumb.jpg' class='thumbImage'>
-                    <h4>Felt Mountain 1</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor a turpis vel malesuada.  
-                    </center></a>
-                </div> -->
-                
-
-                <!-- SINGLE DISPLAY TEMPLATE -->
-           <!-- <div class='col-md-4 col-md-offset-1'>
-                    <a href='img/bikes/felt_mountain_1.jpg'><img class='singleImage' src='img/bikes/felt_mountain_1_thumb.jpg'>
-                    <center><br>Click to Enlarge</center></a>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
-                <div class='col-md-6 col-md-offset-1 singleInfo'>
-                    <h3 class='bikeName'>Felt Mountain 1</h3>
-                    <ul>
-                        <li class='price'>$200</li>
-                        <li>Weight: XXX</li>
-                        <li>Height: XXX</li>
-                        <li>Length: XXX</li>
-                        <li>Gears: XX</li>
-                    </ul>
-                </div> -->
-                
-                
-            <!--<div class='col-md-12 singleDescrip'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor a turpis vel malesuada. Sed vitae ornare lacus. Duis laoreet ipsum in magna sagittis imperdiet. Maecenas in diam a lectus pharetra rutrum. Nulla massa mi, malesuada non vulputate et, auctor vitae lectus. Phasellus vel maximus odio. Maecenas non commodo libero. Ut diam quam, viverra eu turpis quis, ornare bibendum lorem. Nulla a sem augue. Integer volutpat justo quis neque maximus, vitae fermentum nunc aliquam. Aliquam in iaculis dui. Pellentesque sit amet tellus quis purus vestibulum gravida nec a nibh. Aliquam at faucibus arcu. Duis sem mauris, hendrerit non enim a, ultrices luctus ligula.
-                </div> -->
-                
+
+                <div id="dynamicContent" class="col-md-9 col-sm-9 testBorder ">
+                      
+                </div>   
             </div>
-
-                
         </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+        
+    </body>
 
 </html>
