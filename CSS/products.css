@@ -91,7 +91,7 @@ html {
     left:0; 
     width:100%; 
     height:100%; 
-    background:url(../img/bg.jpg) repeat; 
+    background:url(../img/bg.png) repeat; 
     text-align:center;
 	
 }
@@ -107,7 +107,8 @@ html {
     box-shadow:0 0 25px #111;
     -webkit-box-shadow:0 0 25px #111;
     -moz-box-shadow:0 0 25px #111;
-    width:75%;
+    max-width:75%;
+    max-height: 100%;
     background-color: #777;
 }
 

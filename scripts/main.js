@@ -39,49 +39,57 @@
     var feltRd1_thumbImg = "img/bikes/felt_road_1_thumb.jpg";
     var feltRd1_name = "Felt Road 1";
     var feltRd1_price = 350;
-    var feltRd1 = [feltRd1_thumbId, feltRd1_thumbImg, feltRd1_name, feltRd1_price];
+    var feltRd1_Img = "img/bikes/felt_road_1.jpg";
+    var feltRd1 = [feltRd1_thumbId, feltRd1_thumbImg, feltRd1_name, feltRd1_price, feltRd1_Img];
 
     var feltRd2_thumbId = "feltRd2";
     var feltRd2_thumbImg = "img/bikes/felt_road_2_thumb.jpg";
     var feltRd2_name = "Felt Road 2";
     var feltRd2_price = 400;
-    var feltRd2 = [feltRd2_thumbId, feltRd2_thumbImg, feltRd2_name, feltRd2_price];
+    var feltRd2_Img = "img/bikes/felt_road_2.jpg";
+    var feltRd2 = [feltRd2_thumbId, feltRd2_thumbImg, feltRd2_name, feltRd2_price, feltRd2_Img];
 
     var feltRd3_thumbId = "feltRd3";
     var feltRd3_thumbImg = "img/bikes/felt_road_3_thumb.jpg";
     var feltRd3_name = "Felt Road 3";
     var feltRd3_price = 600;
-    var feltRd3 = [feltRd3_thumbId, feltRd3_thumbImg, feltRd3_name, feltRd3_price];
+    var feltRd3_Img = "img/bikes/felt_road_3.jpg";
+    var feltRd3 = [feltRd3_thumbId, feltRd3_thumbImg, feltRd3_name, feltRd3_price, feltRd3_Img];
 
     var feltRd4_thumbId = "feltRd4";
     var feltRd4_thumbImg = "img/bikes/felt_road_4_thumb.jpg";
     var feltRd4_name = "Felt Road 4";
     var feltRd4_price = 800;
-    var feltRd4 = [feltRd4_thumbId, feltRd4_thumbImg, feltRd4_name, feltRd4_price];
+    var feltRd4_Img = "img/bikes/felt_road_4.jpg";
+    var feltRd4 = [feltRd4_thumbId, feltRd4_thumbImg, feltRd4_name, feltRd4_price, feltRd4_Img];
 
     var feltRd5_thumbId = "feltRd5";
     var feltRd5_thumbImg = "img/bikes/felt_road_5_thumb.jpg";
     var feltRd5_name = "Felt Road 5";
     var feltRd5_price = 1900;
-    var feltRd5 = [feltRd5_thumbId, feltRd5_thumbImg, feltRd5_name, feltRd5_price];
+    var feltRd5_Img = "img/bikes/felt_road_5.jpg";
+    var feltRd5 = [feltRd5_thumbId, feltRd5_thumbImg, feltRd5_name, feltRd5_price, feltRd5_Img];
 
     var feltTr1_thumbId = "feltTr1";
     var feltTr1_thumbImg = "img/bikes/felt_track_1_thumb.jpg";
     var feltTr1_name = "Felt Track 1";
     var feltTr1_price = 900;
-    var feltTr1 = [feltTr1_thumbId, feltTr1_thumbImg, feltTr1_name, feltTr1_price];
+    var feltTr1_Img = "img/bikes/felt_track_1.jpg";
+    var feltTr1 = [feltTr1_thumbId, feltTr1_thumbImg, feltTr1_name, feltTr1_price, feltTr1_Img];
 
     var feltTr2_thumbId = "feltTr2";
     var feltTr2_thumbImg = "img/bikes/felt_track_2_thumb.jpg";
     var feltTr2_name = "Felt Track 2";
     var feltTr2_price = 3600;
-    var feltTr2 = [feltTr2_thumbId, feltTr2_thumbImg, feltTr2_name, feltTr2_price];
+    var feltTr2_Img = "img/bikes/felt_track_2.jpg";
+    var feltTr2 = [feltTr2_thumbId, feltTr2_thumbImg, feltTr2_name, feltTr2_price, feltTr2_Img];
 
     var feltTr3_thumbId = "feltTr3";
     var feltTr3_thumbImg = "img/bikes/felt_track_3_thumb.jpg";
     var feltTr3_name = "Felt Track 3";
     var feltTr3_price = 4800;
-    var feltTr3 = [feltTr3_thumbId, feltTr3_thumbImg, feltTr3_name, feltTr3_price];
+    var feltTr3_Img = "img/bikes/felt_track_3.jpg";
+    var feltTr3 = [feltTr3_thumbId, feltTr3_thumbImg, feltTr3_name, feltTr3_price, feltTr3_Img];
 
     var konaRd1_thumbId = "konaRd1";
     var konaRd1_thumbImg = "img/bikes/kona_road_1_thumb.jpg";
@@ -244,40 +252,49 @@ $(function() {
         
     });
 
-    $('.lightbox_trigger').click(function(e) {
-    
+    $(document).on('click', '.lightbox_trigger', function(e) {
+        //alert("We got here");
+
         // Code that makes the lightbox appear
         e.preventDefault();
-        var image_href = $(this).attr("href");
+        try {
+            var image_href = $(this).attr("href");
+            console.log(image_href);
 
-        if ($('#lightbox').length > 0) { // #lightbox exists
-    
-            //insert img tag with clicked link's href as src value
-            $('#content').html('<img src="' + image_href + '" />');
-            
-            //show lightbox window - you can use a transition here if you want, i.e. .show('fast')
-            $('#lightbox').show();
-        } else { //#lightbox does not exist 
-    
-            //create HTML markup for lightbox window
-            var lightbox = 
-            '<div id="lightbox">' +
-                '<p>Click to close</p>' +
-                '<div id="content">' + //insert clicked link's href into img src
-                    '<img src="' + image_href +'" />' +
-                '</div>' +  
-            '</div>';
+            if ($('#lightbox').length > 0) { // #lightbox exists
+        
+                //insert img tag with clicked link's href as src value
+                $('#content').html('<img src="' + image_href + '" />');
                 
-            //insert lightbox HTML into page
-            $('body').append(lightbox);
-        }
-        $("html")
-            .css("position", "fixed")
-            .css("width", "100%");
+                //show lightbox window - you can use a transition here if you want, i.e. .show('fast')
+                $('#lightbox').show();
+            } else { //#lightbox does not exist 
+        
+                //create HTML markup for lightbox window
+                var lightbox = 
+                '<div id="lightbox">' +
+                    '<p>Click to close</p>' +
+                    '<div id="content">' + //insert clicked link's href into img src
+                        '<img src="' + image_href +'" />' +
+                    '</div>' +  
+                '</div>';
+                    
+                //insert lightbox HTML into page
+                $('body').append(lightbox);
+            }
+            $("html")
+                .css("position", "fixed")
+                .css("width", "100%");
 
-        $('img').bind('contextmenu', function(e) {
-            return false;
-        }); 
+            $('img').bind('contextmenu', function(e) {
+                return false;
+            }); 
+
+        } catch(ex) {
+            alert("error occurred.");
+        }
+        
+        
     });
 
     $('#lightbox').live('click', function() {
@@ -293,9 +310,9 @@ function displaySingle(bike) {
     var singleContent = "";
     var singDiv1 = "<div class='col-md-4 col-md-offset-1'><a href='";
     // bike[4]
-    var singDiv2 = "' class='lightbox_trigger'><img class='thumbImage' src='";
+    var singDiv2 = "' class='lightbox_trigger'><img src='";
     // bike[1]
-    var singDiv3 = "'><center><br>Click to Enlarge</center></a></div><div class='col-md-6 col-md-offset-1 singleInfo'><h3 class='bikeName'>";
+    var singDiv3 = "' class='thumbImage'><center><br>Click to Enlarge</center></a></div><div class='col-md-6 col-md-offset-1 singleInfo'><h3 class='bikeName'>";
     // bike[2]
     var singDiv4 = "</h3><ul><li class='price'>Price: $";
     // bike[3]
