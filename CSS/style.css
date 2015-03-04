@@ -27,16 +27,14 @@ body{
 .productMain {
 	padding: 0px;
 }
-#splashImage{
-/*	position: absolute;
-*/}
+
 #biker{
-	height: 75%;
-	min-width: 100%;
+	width: 100%;
 	z-index: 0;
 	margin: 0;
 }
 #mission{
+	display: none;
 	position: absolute;
 	color: black;
 	border: solid 1px white;
@@ -48,6 +46,22 @@ body{
 }
 #featured{
 	margin-top: 1%;
-	background-color: blue;
+	background-color: rgba(255,255,255,.6);
 	clear: both;
+	border-radius: 15px;
+	margin-right: 2%;
 }
+#desc{
+	margin-bottom: 2%;
+}
+#bikepic{
+	width: 85%;
+	height: 85%;
+}
+
+#newsletter{
+	margin-top: 1%;
+	margin-left: 2%;
+	margin-right: 0px;
+	background-color: rgba(255,255,255,.6);
+	border-radius: 15px;
