@@ -1,9 +1,11 @@
 body{
-	background-image: url("../img/bg.jpg");
+	background-image: url("../img/bgpattern.jpg");
 }
-
+h6{
+	color: #e02125;
+}
 #header{
-	margin-bottom: 5px;
+	margin-bottom: 1%;
 	background-color: rgba(255,255,255,.5);
 }
 .navbar-default{
@@ -41,7 +43,7 @@ body{
 	border-radius: 15px;
 	background-color: rgba(255,255,255,.6);
 	z-index: 1;
-	top: 42%;
+	top: 43%;
 	left: 65%;
 }
 #featured{
@@ -50,6 +52,8 @@ body{
 	clear: both;
 	border-radius: 15px;
 	margin-right: 2%;
+	border: 1px solid white;
+	margin-bottom: 1%;
 }
 #desc{
 	margin-bottom: 2%;
@@ -57,11 +61,18 @@ body{
 #bikepic{
 	width: 85%;
 	height: 85%;
+	border: solid 1px gray;
 }
 
 #newsletter{
+	border: 1px solid white;
 	margin-top: 1%;
 	margin-left: 2%;
 	margin-right: 0px;
 	background-color: rgba(255,255,255,.6);
 	border-radius: 15px;
+}
+
+#news{
+	font-size: 14pt
+}
