@@ -4,6 +4,19 @@ body{
 h6{
 	color: #e02125;
 }
+a{
+	color: inherit;
+}
+a:link {
+	color: black;
+    text-decoration: none;
+}
+a:hover{
+	color: #e02125;
+}
+a:visited {
+    text-decoration: none;
+}
 #header{
 	margin-bottom: 1%;
 	background-color: rgba(255,255,255,.5);
@@ -13,8 +26,7 @@ h6{
 }
 
 #navItem{
-	color: red;
-	font-size: 20pt;
+	font-size: 27pt;
 	padding-left: 5%;
 }
 .testBorder {
