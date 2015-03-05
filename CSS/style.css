@@ -88,3 +88,13 @@ a:visited {
 #news{
 	font-size: 14pt
 }
+/*about page*/
+
+#content{
+	color: white;
+	background-color:rgba(255,255,255,.6);
+}
+#bikeshopext{
+	height: 100%; 
+	width: 100%;
+}
