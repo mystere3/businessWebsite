@@ -1,9 +1,24 @@
 body{
-	background-image: url("../img/bg.jpg");
+	background-image: url("../img/bgpattern.jpg");
 }
-
+h6{
+	color: #e02125;
+}
+a{
+	color: inherit;
+}
+a:link {
+	color: black;
+    text-decoration: none;
+}
+a:hover{
+	color: #e02125;
+}
+a:visited {
+    text-decoration: none;
+}
 #header{
-	margin-bottom: 5px;
+	margin-bottom: 1%;
 	background-color: rgba(255,255,255,.5);
 }
 .navbar-default{
@@ -11,8 +26,7 @@ body{
 }
 
 #navItem{
-	color: red;
-	font-size: 20pt;
+	font-size: 27pt;
 	padding-left: 5%;
 }
 .testBorder {
@@ -27,27 +41,50 @@ body{
 .productMain {
 	padding: 0px;
 }
-#splashImage{
-/*	position: absolute;
-*/}
+
 #biker{
-	height: 75%;
-	min-width: 100%;
+	width: 100%;
 	z-index: 0;
 	margin: 0;
 }
 #mission{
+	display: none;
 	position: absolute;
 	color: black;
 	border: solid 1px white;
 	border-radius: 15px;
 	background-color: rgba(255,255,255,.6);
 	z-index: 1;
-	top: 42%;
+	top: 43%;
 	left: 65%;
 }
 #featured{
 	margin-top: 1%;
-	background-color: blue;
+	background-color: rgba(255,255,255,.6);
 	clear: both;
+	border-radius: 15px;
+	margin-right: 2%;
+	border: 1px solid white;
+	margin-bottom: 1%;
+}
+#desc{
+	margin-bottom: 2%;
+}
+#bikepic{
+	width: 85%;
+	height: 85%;
+	border: solid 1px gray;
+}
+
+#newsletter{
+	border: 1px solid white;
+	margin-top: 1%;
+	margin-left: 2%;
+	margin-right: 0px;
+	background-color: rgba(255,255,255,.6);
+	border-radius: 15px;
+}
+
+#news{
+	font-size: 14pt
 }
