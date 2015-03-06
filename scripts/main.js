@@ -184,14 +184,8 @@
 }
 
 
-$(function() {
-
-	// PRODUCT SELECTION
-
-	$("#bikeForm").submit(function(e) {
-        e.preventDefault();
-
-        //var entName = document.forms["myForm"]["userName"].value;
+function mySubmit() {
+     //var entName = document.forms["myForm"]["userName"].value;
         //var entPass = document.forms["myForm"]["password"].value;
         var brand = document.forms["bikeForm"]["brandButton"].value;
         var type = document.forms["bikeForm"]["typeButton"].value;
@@ -203,54 +197,54 @@ $(function() {
         dynContent = ""; 
 
         if (brand === "felt") {
-        	brandArray = feltArray;
+            brandArray = feltArray;
         } else if (brand === "kona") {
-        	brandArray = konaArray;
+            brandArray = konaArray;
         } else if (brand === "scott") {
-        	brandArray = scottArray;
+            brandArray = scottArray;
         } else {
-        	brandArray = allBikesArray;
+            brandArray = allBikesArray;
         };
 
         if (type === "mountain") {
-        	typeArray = mountainArray;
+            typeArray = mountainArray;
         } else if (type === "road") {
-        	typeArray = roadArray;
+            typeArray = roadArray;
         } else if (type === "track") {
-        	typeArray = trackArray;
+            typeArray = trackArray;
         } else {
-        	typeArray = allBikesArray;
+            typeArray = allBikesArray;
         };
 
         if (price === "to500") {
-        	priceArray = to500Array;
+            priceArray = to500Array;
         } else if (price === "to1000") {
-        	priceArray = to1000Array;
+            priceArray = to1000Array;
         } else if (price === "to5000") {
-        	priceArray = to5000Array;
+            priceArray = to5000Array;
         } else {
-        	priceArray = allBikesArray;
+            priceArray = allBikesArray;
         };
 
-    	
+        
         var currentBike;
         var typeContained;
         var priceContained;
         //var displayedBikes;
-    	for (var i = 0; i < brandArray.length; i++) {
-    		currentBike = brandArray[i];
-    		// var brandContained = $.inArray(currentBike, brandArray);
-    		typeContained = $.inArray(currentBike, typeArray);
-    		priceContained = $.inArray(currentBike, priceArray)
+        for (var i = 0; i < brandArray.length; i++) {
+            currentBike = brandArray[i];
+            // var brandContained = $.inArray(currentBike, brandArray);
+            typeContained = $.inArray(currentBike, typeArray);
+            priceContained = $.inArray(currentBike, priceArray)
 
             var bikeDiv = "";
 
-    		if (typeContained >= 0 && priceContained >= 0) {
-    			
-				bikeDiv += thumb1 + currentBike[1] + thumb2 + currentBike[2] + thumb3 + currentBike[0] + thumb4;
-    		};
-    		dynContent += bikeDiv;
-    	};
+            if (typeContained >= 0 && priceContained >= 0) {
+                
+                bikeDiv += thumb1 + currentBike[1] + thumb2 + currentBike[2] + thumb3 + currentBike[0] + thumb4;
+            };
+            dynContent += bikeDiv;
+        };
 
         var strLength = dynContent.length;
         if (strLength > 0) {
@@ -259,7 +253,21 @@ $(function() {
             dynContent = "<div class='col-md-12 thumbBox'><h3>No products matched your request.</h3></div>";
             $("#dynamicContent").html(dynContent);
         };
-        
+
+}
+
+$(function() {
+
+	// PRODUCT SELECTION
+    mySubmit();
+
+	$("#bikeForm").submit(function(e) {
+        e.preventDefault();
+        mySubmit();
+        var windowWidth = $(window).width();
+        if (windowWidth < 600) {
+            window.location.href = "products.html#dynamicContent";
+        };
     });
 
     $(document).on('click', '.lightbox_trigger', function(e) {
