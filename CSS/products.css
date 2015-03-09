@@ -14,6 +14,10 @@ html {
 	max-width: 200px;
 	/*min-height: 200vh;*/
 }
+
+#prodSidebar {
+	min-height: 475px;
+}
 #bikeForm {
 	margin-left: 15px;
 	margin-top: 20px;
@@ -141,6 +145,7 @@ h3 {
 		font-size: 27pt;
 	}
 
+
 }
 
 @media (max-width: 900px) {
@@ -153,5 +158,6 @@ h3 {
 	#navItem {
 		font-size: 16pt;
 	}
+
 }
 

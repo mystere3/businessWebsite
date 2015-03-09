@@ -1,0 +1,65 @@
+{
+	"bikeArray": [
+		{
+			"name": "Felt Mountain 1",
+			"brand": "felt",
+			"type": "mountain",
+			"price": "400",
+			"thumbId": "feltMt1",
+			"thumbImg": "img/bikes/felt_mountain_1_thumb.jpg",
+			"img": "img/bikes/felt_mountain_1.jpg"
+		},
+		{
+			"name": "FeltMountain 2",
+			"brand": "felt",
+			"type": "mountain",
+			"price": "700",
+			"thumbId": "feltMt2",
+			"thumbImg": "img/bikes/felt_mountain_2_thumb.jpg",
+			"img": "img/bikes/felt_mountain_2.jpg"
+		},
+		{
+			"name": "FeltMountain 3",
+			"brand": "felt",
+			"type": "mountain",
+			"price": "900",
+			"thumbId": "feltMt3",
+			"thumbImg": "img/bikes/felt_mountain_3_thumb.jpg",
+			"img": "img/bikes/felt_mountain_3.jpg"
+		},
+		{
+			"name": "FeltMountain 4",
+			"brand": "felt",
+			"type": "mountain",
+			"price": "2000",
+			"thumbId": "feltMt4",
+			"thumbImg": "img/bikes/felt_mountain_4_thumb.jpg",
+			"img": "img/bikes/felt_mountain_4.jpg"
+		},
+		{
+			"name": "FeltMountain 5",
+			"brand": "felt",
+			"type": "mountain",
+			"price": "4000",
+			"thumbId": "feltMt5",
+			"thumbImg": "img/bikes/felt_mountain_5_thumb.jpg",
+			"name": "FeltMountain 5",
+			"price": "4000",
+			"img": "img/bikes/felt_mountain_5.jpg"
+		},
+		{
+			"name": "Felt Mountain 1",
+			"brand": "felt",
+			"type": "mountain",
+			"price": "400",
+			"thumbId": "feltMt1",
+			"thumbImg": "img/bikes/felt_mountain_1_thumb.jpg",
+			"img": "img/bikes/felt_mountain_1.jpg"
+		},
+		
+	]
+
+
+
+
+}
