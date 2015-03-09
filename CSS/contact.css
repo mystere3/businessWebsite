@@ -3,13 +3,40 @@ h3 {
 	padding-top: 10px;
 }
 
-#navItem{
+/*#navItem{
 	font-size: 27pt;
 	padding-left: 0px;
-}
+}*/
 
 #content {
 	padding-left: 15px;
 	margin-top: 0px;
-	color: 
+	color: inherit;
+}
+
+.navbar {
+	min-height: 25px;
+	margin-bottom: 10px;
+}
+
+
+
+
+@media all and (min-width: 1000px) {
+	#navItem{
+		font-size: 27pt;
+	}
+
+}
+
+@media (max-width: 900px) {
+	#navItem {
+		font-size: 18pt;
+	}
+}
+
+@media (max-width: 500px) {
+	#navItem {
+		font-size: 16pt;
+	}
 }
