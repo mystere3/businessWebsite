@@ -256,9 +256,38 @@ function mySubmit() {
 
 }
 
+function mySubmitJSON() {
+    var brand = document.forms["bikeForm"]["brandButton"].value;
+    var type = document.forms["bikeForm"]["typeButton"].value;
+    var price = document.forms["bikeForm"]["priceButton"].value;
+}
+
+var allBikesArray;
+var feltArray;
+var konaArray;
+var scottArray;
+var mountainArray;
+var roadArray;
+var trackArray;
+var to500Array;
+var to1000Array;
+var to5000Array;
+
+function populateArrays(array) {
+    for(var bike in array) {
+        console.log(bike["name"]);
+    }
+}
+
 $(function() {
 
 	// PRODUCT SELECTION
+
+    
+
+
+
+
     mySubmit();
 
 	$("#bikeForm").submit(function(e) {
@@ -311,8 +340,6 @@ $(function() {
         } catch(ex) {
             alert("error occurred.");
         }
-        
-        
     });
 
     $('#lightbox').live('click', function() {
@@ -339,7 +366,6 @@ function displaySingle(bike) {
     singleContent = singDiv1 + bike[4] + singDiv2 + bike[1] + singDiv3 + bike[2] + singDiv4 + bike[3] + singDiv5;
     console.log(singleContent);
     $("#dynamicContent").html(singleContent);
-
 }
 
 function backButton() {
