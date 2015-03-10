@@ -100,7 +100,7 @@ a:visited {
 }
 
 /*Media Query stuff. Made this for the index, so let me know if anything gets screwed up on your pages - Cory*/
-@media all and (max-width: 700px){
+@media all and (max-width: 800px){
 	#splashImage{
 		display: none;
 	}
@@ -113,9 +113,13 @@ a:visited {
 		margin: auto;
 		width: 100%;
 	}
+	#bikepic{
+		height: 100%;
+		width: 100%;
+	}
 
 }
-@media all and (max-width: 1080px){
+@media all and (max-width: 1000px){
 	#mission{
 		top: 55%;
 		width: 50%;
@@ -127,3 +131,4 @@ a:visited {
 	#navItem {
 		font-size: 16pt;
 	}
+
