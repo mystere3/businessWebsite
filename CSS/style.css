@@ -98,3 +98,19 @@ a:visited {
 	height: 100%; 
 	width: 100%;
 }
+
+/*Media Query stuff. Made this for the index, so let me know if anything gets screwed up on your pages - Cory*/
+@media all and (max-width: 480px){
+	#splashImage{
+		display: none;
+	}
+	#featured{
+		width: 95%;
+		margin:auto;
+	}
+	#newsletter{
+		clear: both;
+		margin: auto;
+		width: 95%;
+	}
+}
