@@ -122,3 +122,8 @@ a:visited {
 		left: 45%;
 	}	
 }
+
+@media (max-width: 500px) {
+	#navItem {
+		font-size: 16pt;
+	}
