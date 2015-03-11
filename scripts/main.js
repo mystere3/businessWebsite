@@ -281,9 +281,17 @@ function populateArrays(array) {
 
 $(function() {
 
-	// PRODUCT SELECTION
+	// JSON ATTEMPT!
 
-    
+    $.getJSON('scripts/bikes.json', function(data) {
+        console.log('success');
+        $.each(data.bikeArray, function(i, bike) {
+            var testString = bike.name + ' $' + bike.p
+            $('#JSONtest').append('<p>' + bike.name + ' $' + bike.price + 'br' + '<img src="' + bike.thumbImg + '">' '</p>');
+        });
+    }).error(function() {
+        console.log('error');
+    });
 
 
 
