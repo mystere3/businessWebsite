@@ -256,42 +256,11 @@ function mySubmit() {
 
 }
 
-function mySubmitJSON() {
-    var brand = document.forms["bikeForm"]["brandButton"].value;
-    var type = document.forms["bikeForm"]["typeButton"].value;
-    var price = document.forms["bikeForm"]["priceButton"].value;
-}
 
-var allBikesArray;
-var feltArray;
-var konaArray;
-var scottArray;
-var mountainArray;
-var roadArray;
-var trackArray;
-var to500Array;
-var to1000Array;
-var to5000Array;
-
-function populateArrays(array) {
-    for(var bike in array) {
-        console.log(bike["name"]);
-    }
-}
 
 $(function() {
 
-	// JSON ATTEMPT!
 
-    $.getJSON('scripts/bikes.json', function(data) {
-        console.log('success');
-        $.each(data.bikeArray, function(i, bike) {
-            var testString = bike.name + ' $' + bike.p
-            $('#JSONtest').append('<p>' + bike.name + ' $' + bike.price + 'br' + '<img src="' + bike.thumbImg + '">' '</p>');
-        });
-    }).error(function() {
-        console.log('error');
-    });
 
 
 

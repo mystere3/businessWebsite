@@ -1,5 +1,6 @@
 {
-	"bikeArray": [
+	"bikes": 
+	[
 		{
 			"name": "Felt Mountain 1",
 			"brand": "felt",
@@ -48,18 +49,13 @@
 			"img": "img/bikes/felt_mountain_5.jpg"
 		},
 		{
-			"name": "Felt Mountain 1",
-			"brand": "felt",
+			"name": "Kona Mountain 1",
+			"brand": "kona",
 			"type": "mountain",
 			"price": "400",
 			"thumbId": "feltMt1",
 			"thumbImg": "img/bikes/felt_mountain_1_thumb.jpg",
 			"img": "img/bikes/felt_mountain_1.jpg"
-		},
-		
+		}
 	]
-
-
-
-
 }
