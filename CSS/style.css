@@ -127,7 +127,7 @@ a:visited {
 	}	
 }
 
-@media (max-width: 500px) {
+@media all and (max-width: 350px) {
 	#navItem {
 		font-size: 16pt;
 	}
