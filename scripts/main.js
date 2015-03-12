@@ -1,3 +1,12 @@
+// MAIN.js              DEPRECTATED!!!!!!!!!
+// -----------------------------------------
+// All of this has been updated in products_JSON.js
+// Rewritten to incorporate JSON data. This file is
+// no longer linked to any pages.
+
+
+
+
 // VARIABLE HORDE!!!
 {
     var feltMt1_thumbId = "feltMt1";
@@ -185,105 +194,80 @@
 
 
 function mySubmit() {
-     //var entName = document.forms["myForm"]["userName"].value;
-        //var entPass = document.forms["myForm"]["password"].value;
-        var brand = document.forms["bikeForm"]["brandButton"].value;
-        var type = document.forms["bikeForm"]["typeButton"].value;
-        var price = document.forms["bikeForm"]["priceButton"].value;
-        var brandArray;
-        var typeArray;
-        var priceArray;
-        
-        dynContent = ""; 
-
-        if (brand === "felt") {
-            brandArray = feltArray;
-        } else if (brand === "kona") {
-            brandArray = konaArray;
-        } else if (brand === "scott") {
-            brandArray = scottArray;
-        } else {
-            brandArray = allBikesArray;
-        };
-
-        if (type === "mountain") {
-            typeArray = mountainArray;
-        } else if (type === "road") {
-            typeArray = roadArray;
-        } else if (type === "track") {
-            typeArray = trackArray;
-        } else {
-            typeArray = allBikesArray;
-        };
-
-        if (price === "to500") {
-            priceArray = to500Array;
-        } else if (price === "to1000") {
-            priceArray = to1000Array;
-        } else if (price === "to5000") {
-            priceArray = to5000Array;
-        } else {
-            priceArray = allBikesArray;
-        };
-
-        
-        var currentBike;
-        var typeContained;
-        var priceContained;
-        //var displayedBikes;
-        for (var i = 0; i < brandArray.length; i++) {
-            currentBike = brandArray[i];
-            // var brandContained = $.inArray(currentBike, brandArray);
-            typeContained = $.inArray(currentBike, typeArray);
-            priceContained = $.inArray(currentBike, priceArray)
-
-            var bikeDiv = "";
-
-            if (typeContained >= 0 && priceContained >= 0) {
-                
-                bikeDiv += thumb1 + currentBike[1] + thumb2 + currentBike[2] + thumb3 + currentBike[0] + thumb4;
-            };
-            dynContent += bikeDiv;
-        };
-
-        var strLength = dynContent.length;
-        if (strLength > 0) {
-            $("#dynamicContent").html(dynContent);
-        } else {
-            dynContent = "<div class='col-md-12 thumbBox'><h3>No products matched your request.</h3></div>";
-            $("#dynamicContent").html(dynContent);
-        };
-
-}
-
-function mySubmitJSON() {
     var brand = document.forms["bikeForm"]["brandButton"].value;
     var type = document.forms["bikeForm"]["typeButton"].value;
     var price = document.forms["bikeForm"]["priceButton"].value;
+    var brandArray;
+    var typeArray;
+    var priceArray;
+    
+    dynContent = ""; 
+
+    if (brand === "felt") {
+        brandArray = feltArray;
+    } else if (brand === "kona") {
+        brandArray = konaArray;
+    } else if (brand === "scott") {
+        brandArray = scottArray;
+    } else {
+        brandArray = allBikesArray;
+    };
+
+    if (type === "mountain") {
+        typeArray = mountainArray;
+    } else if (type === "road") {
+        typeArray = roadArray;
+    } else if (type === "track") {
+        typeArray = trackArray;
+    } else {
+        typeArray = allBikesArray;
+    };
+
+    if (price === "to500") {
+        priceArray = to500Array;
+    } else if (price === "to1000") {
+        priceArray = to1000Array;
+    } else if (price === "to5000") {
+        priceArray = to5000Array;
+    } else {
+        priceArray = allBikesArray;
+    };
+
+    
+    var currentBike;
+    var typeContained;
+    var priceContained;
+    //var displayedBikes;
+    for (var i = 0; i < brandArray.length; i++) {
+        currentBike = brandArray[i];
+        // var brandContained = $.inArray(currentBike, brandArray);
+        typeContained = $.inArray(currentBike, typeArray);
+        priceContained = $.inArray(currentBike, priceArray)
+
+        var bikeDiv = "";
+
+        if (typeContained >= 0 && priceContained >= 0) {
+            
+            bikeDiv += thumb1 + currentBike[1] + thumb2 + currentBike[2] + thumb3 + currentBike[0] + thumb4;
+        };
+        dynContent += bikeDiv;
+    };
+
+    var strLength = dynContent.length;
+    if (strLength > 0) {
+        $("#dynamicContent").html(dynContent);
+    } else {
+        dynContent = "<div class='col-md-12 thumbBox'><h3>No products matched your request.</h3></div>";
+        $("#dynamicContent").html(dynContent);
+    };
+
 }
 
-var allBikesArray;
-var feltArray;
-var konaArray;
-var scottArray;
-var mountainArray;
-var roadArray;
-var trackArray;
-var to500Array;
-var to1000Array;
-var to5000Array;
 
-function populateArrays(array) {
-    for(var bike in array) {
-        console.log(bike["name"]);
-    }
-}
 
 $(function() {
 
-	// PRODUCT SELECTION
 
-    
 
 
 
