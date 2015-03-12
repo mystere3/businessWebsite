@@ -1,3 +1,12 @@
+// MAIN.js              DEPRECTATED!!!!!!!!!
+// -----------------------------------------
+// All of this has been updated in products_JSON.js
+// Rewritten to incorporate JSON data. This file is
+// no longer linked to any pages.
+
+
+
+
 // VARIABLE HORDE!!!
 {
     var feltMt1_thumbId = "feltMt1";
