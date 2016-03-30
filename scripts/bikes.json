@@ -1,0 +1,189 @@
+{
+	"bikes": 
+	[
+		{
+			"name": "Felt Mountain 1",
+			"brand": "felt",
+			"type": "mountain",
+			"price": 400,
+			"thumbImg": "img/bikes/felt_mountain_1_thumb.jpg",
+			"img": "img/bikes/felt_mountain_1.jpg"
+		},
+		{
+			"name": "Felt Mountain 2",
+			"brand": "felt",
+			"type": "mountain",
+			"price": 700,
+			"thumbImg": "img/bikes/felt_mountain_2_thumb.jpg",
+			"img": "img/bikes/felt_mountain_2.jpg"
+		},
+		{
+			"name": "Felt Mountain 3",
+			"brand": "felt",
+			"type": "mountain",
+			"price": 900,
+			"thumbImg": "img/bikes/felt_mountain_3_thumb.jpg",
+			"img": "img/bikes/felt_mountain_3.jpg"
+		},
+		{
+			"name": "Felt Mountain 4",
+			"brand": "felt",
+			"type": "mountain",
+			"price": 2000,
+			"thumbImg": "img/bikes/felt_mountain_4_thumb.jpg",
+			"img": "img/bikes/felt_mountain_4.jpg"
+		},
+		{
+			"name": "Felt Mountain 5",
+			"brand": "felt",
+			"type": "mountain",
+			"price": 4000,
+			"thumbImg": "img/bikes/felt_mountain_5_thumb.jpg",
+			"img": "img/bikes/felt_mountain_5.jpg"
+		},
+		{
+			"name": "Felt Road 1",
+			"brand": "felt",
+			"type": "road",
+			"price": 350,
+			"thumbImg": "img/bikes/felt_road_1_thumb.jpg",
+			"img": "img/bikes/felt_road_1.jpg"
+		},
+		{
+			"name": "Felt Road 2",
+			"brand": "felt",
+			"type": "road",
+			"price": 400,
+			"thumbImg": "img/bikes/felt_road_2_thumb.jpg",
+			"img": "img/bikes/felt_road_2.jpg"
+		},
+		{
+			"name": "Felt Road 3",
+			"brand": "felt",
+			"type": "road",
+			"price": 600,
+			"thumbImg": "img/bikes/felt_road_3_thumb.jpg",
+			"img": "img/bikes/felt_road_3.jpg"
+		},
+		{
+			"name": "Felt Road 4",
+			"brand": "felt",
+			"type": "road",
+			"price": 800,
+			"thumbImg": "img/bikes/felt_road_4_thumb.jpg",
+			"img": "img/bikes/felt_road_4.jpg"
+		},
+		{
+			"name": "Felt Road 5",
+			"brand": "felt",
+			"type": "road",
+			"price": 1900,
+			"thumbImg": "img/bikes/felt_road_5_thumb.jpg",
+			"img": "img/bikes/felt_road_5.jpg"
+		},
+		{
+			"name": "Felt Track 1",
+			"brand": "felt",
+			"type": "track",
+			"price": 900,
+			"thumbImg": "img/bikes/felt_track_1_thumb.jpg",
+			"img": "img/bikes/felt_track_1.jpg"
+		},
+		{
+			"name": "Felt Track 2",
+			"brand": "felt",
+			"type": "track",
+			"price": 3600,
+			"thumbImg": "img/bikes/felt_track_2_thumb.jpg",
+			"img": "img/bikes/felt_track_2.jpg"
+		},
+		{
+			"name": "Felt Track 3",
+			"brand": "felt",
+			"type": "track",
+			"price": 4800,
+			"thumbImg": "img/bikes/felt_track_3_thumb.jpg",
+			"img": "img/bikes/felt_track_3.jpg"
+		},
+		{
+			"name": "Kona Road 1",
+			"brand": "kona",
+			"type": "road",
+			"price": 2900,
+			"thumbImg": "img/bikes/kona_road_1_thumb.jpg",
+			"img": "img/bikes/kona_road_1.jpg"
+		},
+		{
+			"name": "Scott Mountain 1",
+			"brand": "scott",
+			"type": "mountain",
+			"price": 450,
+			"thumbImg": "img/bikes/scott_mountain_1_thumb.png",
+			"img": "img/bikes/scott_mountain_1.jpg"
+		},
+		{
+			"name": "Scott Mountain 2",
+			"brand": "scott",
+			"type": "mountain",
+			"price": 800,
+			"thumbImg": "img/bikes/scott_mountain_2_thumb.png",
+			"img": "img/bikes/scott_mountain_2.jpg"
+		},
+		{
+			"name": "Scott Mountain 3",
+			"brand": "scott",
+			"type": "mountain",
+			"price": 900,
+			"thumbImg": "img/bikes/scott_mountain_3_thumb.png",
+			"img": "img/bikes/scott_mountain_3.jpg"
+		},
+		{
+			"name": "Scott Mountain 4",
+			"brand": "scott",
+			"type": "mountain",
+			"price": 1750,
+			"thumbImg": "img/bikes/scott_mountain_4_thumb.png",
+			"img": "img/bikes/scott_mountain_4.jpg"
+		},
+		{
+			"name": "Scott Mountain 5",
+			"brand": "scott",
+			"type": "mountain",
+			"price": 3100,
+			"thumbImg": "img/bikes/scott_mountain_5_thumb.png",
+			"img": "img/bikes/scott_mountain_5.jpg"
+		},
+		{
+			"name": "Scott Road 1",
+			"brand": "scott",
+			"type": "road",
+			"price": 300,
+			"thumbImg": "img/bikes/scott_road_1_thumb.png",
+			"img": "img/bikes/scott_road_1.jpg"
+		},
+		{
+			"name": "Scott Road 2",
+			"brand": "scott",
+			"type": "road",
+			"price": 475,
+			"thumbImg": "img/bikes/scott_road_2_thumb.png",
+			"img": "img/bikes/scott_road_2.jpg"
+		},
+		{
+			"name": "Scott Road 3",
+			"brand": "scott",
+			"type": "road",
+			"price": 775,
+			"thumbImg": "img/bikes/scott_road_3_thumb.png",
+			"img": "img/bikes/scott_road_3.jpg"
+		},
+		{
+			"name": "Scott Road 4",
+			"brand": "scott",
+			"type": "road",
+			"price": 1800,
+			"thumbImg": "img/bikes/scott_road_4_thumb.png",
+			"img": "img/bikes/scott_road_4.jpg"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js">
+        </script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
+        </script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/products.css">
+        <script src="scripts/products_JSON.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+    <div class="jumbotron" id="header">
+         <div class="container">
+            <h1>Broken Spokes Bike Shop</h1>
+        </div>
+    </div>
+    <nav role="navigation" class="navbar navbar-default">
+        
+        <div class="col-sm-2 col-sm-offset-1 col-xs-offset-0" id="navItem">
+            <a href="index.html"><center>Home</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="products.html"><center>Products</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="trails.html"><center>Trails</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="about.html"><center>About</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="contact.html"><center>Contact</center></a>
+        </div>
+        
+    </nav>
+        <div class="container productMain">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 sidebar" id="prodSidebar">
+                    <form id="bikeForm">
+                        Select Brand:<br>
+                        <input type="radio" name="brandButton" value="felt"><img src="img/Felt_LOGO.png" class="formLogo"><br>
+                        <input type="radio" name="brandButton" value="kona"><img src="img/Kona_LOGO.gif" class="formLogo"><br>
+                        <input type="radio" name="brandButton" value="scott"><img src="img/scott_LOGO.png" class="formLogo"><br>
+                        <input type="radio" name="brandButton" value="all" checked="checked"> Select all<br>
+                        <br>
+                        Select Type:<br>
+                        <input type="radio" name="typeButton" value="mountain"> Mountain<br>
+                        <input type="radio" name="typeButton" value="road"> Road<br>
+                        <input type="radio" name="typeButton" value="track"> Track<br>
+                        <input type="radio" name="typeButton" value="all" checked="checked"> Select all<br>
+                        <br>
+                        Select Price:<br>
+                        <input type="radio" name="priceButton" value="to500"> $0 - $500<br>
+                        <input type="radio" name="priceButton" value="to1000"> $500 - $1000<br>
+                        <input type="radio" name="priceButton" value="to5000"> $1000 - $5000<br>
+                        <input type="radio" name="priceButton" value="all" checked="checked"> Select all<br>
+
+                        <input id="selectSubmit" type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="col-md-9 col-sm-9">
+                    <div class='col-md-12'><h3>Bikes</h3></div>  
+                    <div id="dynamicContent" class="col-md-12">
+                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- <div id="JSONtest"></div> -->
+        
+    </body>
+
+</html>

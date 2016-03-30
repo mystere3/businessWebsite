@@ -1,0 +1,163 @@
+html {
+	/*border: solid 1px red;*/
+	margin-bottom: 0px;
+
+	/*min-height: 100%;*/
+}
+ body {
+ 	/*overflow: auto;*/
+ }
+ a.thumbClick {
+ 	color: #333;
+ }
+.sidebar {
+	max-width: 200px;
+	/*min-height: 200vh;*/
+}
+
+#prodSidebar {
+	min-height: 475px;
+}
+#bikeForm {
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.formLogo {
+	width: 88%;
+	margin-left: 5px;
+}
+
+#selectSubmit {
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.productMain {
+	background-color: rgba(255,255,255,.7);
+	display:block;
+	overflow:auto;
+	/*border: solid 3px white;*/
+
+}
+#dynamicContent {
+	/*padding-bottom: 50px;*/
+	/*box-sizing: content-box;*/
+}
+
+.thumbBox {
+	/*border: solid 1px yellow;*/
+	/*cursor: pointer;*/
+	min-height: 275px;
+	/*background-color: white;*/
+}
+
+.thumbImage {
+	width: 90%;
+	padding: 5px;
+	margin-top: 10px;
+	border: solid 1px grey;
+	box-shadow:0 0 15px #777;
+    -moz-box-shadow:0 0 15px #777;
+    -webkit-box-shadow:0 0 15px #777;
+    background-color: white;
+}
+
+.singleImage {
+	width: 90%;
+}
+
+.singleInfo {
+
+}
+.singleDescrip {
+	margin-top: 10px;
+	padding-bottom: 25px;	
+}
+.singleButton {
+	margin: 10px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.backButton {
+	margin-top: 20px;
+	width: 200px;
+	font-size: 17pt;
+	border-radius: 5px;
+	background-color: white;
+}
+
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background:url(../img/bg.png) repeat; 
+    text-align:center;
+	
+}
+
+#lightbox p {
+    text-align:right; 
+    color:#fff; 
+    margin-right:20px; 
+    font-size:12px; 
+}
+
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:75%;
+    max-height: 100%;
+    /*background-color: #777;*/
+}
+
+h3 {
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+/*#navItem{
+	font-size: 27pt;
+	padding-left: 0px;
+}*/
+
+#content {
+	padding-left: 15px;
+	margin-top: 0px;
+	color: inherit;
+}
+
+.navbar {
+	min-height: 25px;
+	margin-bottom: 10px;
+}
+
+
+
+
+@media all and (min-width: 1000px) {
+	#navItem{
+		font-size: 27pt;
+	}
+
+
+}
+
+@media (max-width: 900px) {
+	#navItem {
+		font-size: 18pt;
+	}
+}
+
+@media (max-width: 500px) {
+	#navItem {
+		font-size: 16pt;
+	}
+
+}
+

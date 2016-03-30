@@ -1,0 +1,134 @@
+body{
+	background-image: url("../img/bgpattern.jpg");
+}
+h6{
+	color: #e02125;
+}
+a{
+	color: inherit;
+}
+a:link {
+	color: black;
+    text-decoration: none;
+}
+a:hover{
+	color: #e02125;
+}
+a:visited {
+    text-decoration: none;
+}
+#header{
+	margin-bottom: 1%;
+	background-color: rgba(255,255,255,.5);
+}
+.navbar-default{
+	background-color: rgba(255,255,255,.6);
+}
+
+#navItem{
+	font-size: 27pt;
+	padding-left: 5%;
+}
+.testBorder {
+	border: solid 1px blue;
+	height: 50vh;
+}
+
+.sidebar {
+	min-height: 80vh;
+}
+
+.productMain {
+	padding: 0px;
+}
+
+#biker{
+	width: 100%;
+	z-index: 0;
+	margin: 0;
+}
+#mission{
+	display: none;
+	position: absolute;
+	color: black;
+	border: solid 1px white;
+	border-radius: 15px;
+	background-color: rgba(255,255,255,.6);
+	z-index: 1;
+	top: 43%;
+	left: 65%;
+}
+#featured{
+	margin-top: 1%;
+	background-color: rgba(255,255,255,.6);
+	clear: both;
+	border-radius: 15px;
+	margin-right: 2%;
+	border: 1px solid white;
+	margin-bottom: 1%;
+}
+#desc{
+	margin-bottom: 2%;
+}
+#bikepic{
+	width: 85%;
+	height: 85%;
+	border: solid 1px gray;
+}
+
+#newsletter{
+	border: 1px solid white;
+	margin-top: 1%;
+	margin-left: 2%;
+	margin-right: 0px;
+	background-color: rgba(255,255,255,.6);
+	border-radius: 15px;
+}
+
+#news{
+	font-size: 14pt
+}
+/*about page*/
+
+#content{
+	color: white;
+	background-color:rgba(255,255,255,.6);
+}
+#bikeshopext{
+	height: 100%; 
+	width: 100%;
+}
+
+/*Media Query stuff. Made this for the index, so let me know if anything gets screwed up on your pages - Cory*/
+@media all and (max-width: 800px){
+	#splashImage{
+		display: none;
+	}
+	#featured{
+		width: 100%;
+		margin:auto;
+	}
+	#newsletter{
+		clear: both;
+		margin: auto;
+		width: 100%;
+	}
+	#bikepic{
+		height: 100%;
+		width: 100%;
+	}
+
+}
+@media all and (max-width: 1000px){
+	#mission{
+		top: 55%;
+		width: 50%;
+		left: 45%;
+	}	
+}
+
+@media all and (max-width: 350px) {
+	#navItem {
+		font-size: 16pt;
+	}
+

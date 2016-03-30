@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js">
+        </script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
+        </script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/products.css">
+        <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+        <script src="scripts/contact.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+    <div class="jumbotron" id="header">
+         <div class="container">
+            <h1>Broken Spokes Bike Shop</h1>
+        </div>
+    </div>
+    <nav role="navigation" class="navbar navbar-default">
+        
+        <div class="col-sm-2 col-sm-offset-1 col-xs-offset-0" id="navItem">
+            <a href="index.html"><center>Home</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="products.html"><center>Products</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="trails.html"><center>Trails</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="about.html"><center>About</center></a>
+        </div>
+        <div class="col-sm-2" id="navItem">
+            <a href="contact.html"><center>Contact</center></a>
+        </div>
+        
+    </nav>
+        <div class="container">
+            <div class="row"></div>
+            <div id="content"><h3>Contact Us</h3>
+                <p>Questions about our bikes or anything?</p>
+                <p>Send us a message: <br>
+                    Name: <br><input type="text" id="nameField"><br>
+                    Subject: <br><input type="text" id="subjectField"><br>
+                    Content: <br><input type="text" id="contentField"><br><br>
+                    <a id="messageButton" class="button" onclick="messageSubmit()">Submit</a>
+                </p><br>
+
+                <p><a id="emailButton" class="button" href="mailto:mystere3@msn.com?Subject=Youll%20never%20get%20a%20response" target="_top">Email us!</a></p>
+
+                <h3>Come visit us!</h3>
+                <p>We're in the 2 hippest places you can possibly think of.</p>
+                <p>Williamsburg, Brooklyn. The home of the beard:</p>
+                <iframe width="300" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=16&center=40.7128%2C-73.9514&key=AIzaSyD7ieIxrINcOl5iyLwCrJLzXR0j8JS1VuQ"></iframe>
+                <br>
+                <p>Portland, OR. Home of the pierced and tattooed meth heads.</p>
+                <iframe width="300" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=45.5231%2C-122.6765&key=AIzaSyD7ieIxrINcOl5iyLwCrJLzXR0j8JS1VuQ"></iframe>
+
+
+            </div>
+        </div>
+        
+    </body>
+
+</html>
